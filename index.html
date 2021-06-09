@@ -127,17 +127,19 @@
             </div> -->
             <!-------------------------- Recharge ----------------------->
             <div class="recharge">
-                <form class="flex-container-recharge">
-                    <div class="flex-item-recharge">Recharge and Pay Postpaid Bills</div>
-                    <div class="flex-item-recharge">
+                <form class="flex-container-recharge-section">
+                    <div class="flex-item-recharge-left"><h3>Recharge and Pay Postpaid Bills</h3></div>
+                    <div class="flex-item-recharge-right">
                         <div class="recharge-phone">
-                            <input type="tel" placeholder="Enter Mobile Number">
+                            <div class="phone-prepend"><span class="phone-prepend-span">+977</span></div>
+                            <input type="number" class="form-control" name="phoneNum" placeholder="Enter Mobile Number" required maxlength="10">
                         </div>
                         <div class="recharge-amount">
-                            <input type="number" placeholder="Enter Amount">
+                            <div class="amount-prepend"><span class="amount-prepend-span">Rs.</span></div>
+                            <input type="number" class="form-control" name="amount" placeholder="Enter Amount" required value="">
                         </div>
                         <div class="recharge-submit">
-                            <button type="submit" value="Recharge"></button>
+                            <button type="submit" class="btn-recharge" value="Recharge">Recharge</button>
                         </div>
                     </div>
                 </form>
@@ -149,12 +151,30 @@
                         <div class="flex-item-text">Find What You Need Right Away</div>
                     </div>
                     <div class="flex-container-find-content">
-                        <div class="flex-item-find"><img src="img/group 119296yqaloduktpl.png" alt="group"></div>
-                        <div class="flex-item-find"><img src="img/group 116361bblhllbkfyw.png" alt="group"></div>
-                        <div class="flex-item-find"><img src="img/group 11637ckef9w6euhz4.png" alt="group"></div>
-                        <div class="flex-item-find"><img src="img/group 11640yguzohps2rtl.png" alt="group"></div>
-                        <div class="flex-item-find"><img src="img/group 11640-1j3ikg7klnfmd.png" alt="group"></div>
-                        <div class="flex-item-find"><img src="img/group 116415m7dcaryduyg.png" alt="group"></div>
+                        <a href="#find1" class="flex-item-find-card">
+                            <img class="flex-item-img" src="img/group 119296yqaloduktpl.png" alt="group">
+                            <p class="card-name">Data Pack</p>
+                        </a>
+                        <a href="#find2" class="flex-item-find-card">
+                            <img class="flex-item-img" src="img/group 116361bblhllbkfyw.png" alt="group">
+                            <p class="card-name">Voice Pack</p>
+                        </a>
+                        <a href="#find3" class="flex-item-find-card">
+                            <img class="flex-item-img" src="img/group 11637ckef9w6euhz4.png" alt="group">
+                            <p class="card-name">Latest Offers</p>
+                        </a>
+                        <a href="#find4" class="flex-item-find-card">
+                            <img class="flex-item-img" src="img/group 11640yguzohps2rtl.png" alt="group">
+                            <p class="card-name">International Roaming</p>
+                        </a>
+                        <a href="#find5" class="flex-item-find-card">
+                            <img class="flex-item-img" src="img/group 11640-1j3ikg7klnfmd.png" alt="group">
+                            <p class="card-name">Get Started</p>
+                        </a>
+                        <a href="#find6" class="flex-item-find-card">
+                            <img class="flex-item-img" src="img/group 116415m7dcaryduyg.png" alt="group">
+                            <p class="card-name">VAS</p>
+                        </a>
                     </div> 
                 </div>
                 <!------------------------- Latest ------------------>
@@ -163,61 +183,102 @@
                         <div>Latest from Ncell</div>
                     </div>
                     <div class="flex-container-latest">
-                        <div class="flex-latest-left">
-                            <div class="flex-item-latest-content1">2.14 GB</div>
-                            <div class="flex-item-latest-content2">Work from Home 1-Day Data Pack</div>
-                            <div class="flex-item-latest-content3">
-                                <figure>
-                                    <img src="img/card--triangles-s.svg" alt="card--triangles-s">
-                                    <div class="text-inside-img">Rs. 31</div>
-                                </figure>
+                        <div class="latest-left-wrap">
+                            <div class="flex-latest-left">
+                                <div class="flex-item-latest-top">
+                                    <h3>2.14 GB</h3>
+                                    <p>Work from Home 1-Day Data Pack</p>
+                                </div>
+                                <div class="flex-item-latest-middle">
+                                    <figure>
+                                        <img src="img/card--triangles-s.svg" alt="card--triangles-s">
+                                    </figure>
+                                    <div class="text-inside-img">
+                                        <p class="smaller-text">Rs.</p>
+                                        <p class="bigger-text">31</p>
+                                    </div>
+                                    <p class="mid-lower">(Including taxes)</p>
+                                </div>
+                                <div class="flex-item-latest-bottom">
+                                    <p>
+                                        "Validity:"
+                                        "24.00 Hours"
+                                    </p>
+                                    <div class="btn-lower-part">
+                                        <a href="#buy" class="btn-primary">Buy Now</a>
+                                        <a href="#info" class="btn-secondary">More Info</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex-item-latest-content4">(Including taxes)</div>
-                            <div class="flex-item-latest-content5">Validity: 24.00 Hours</div>
-                            <div class="flex-item-latest-content6">
-                                <button type="submit" class="latest-content-buy-now">Buy Now</button>
-                            </div>
-                            <div class="flex-item-latest-content7">
-                                <button type="submit" class="latest-content-info">More Info</button>
-                            </div>
-                        </div>
-                        <div class="flex-latest-mid">
-                            <div class="flex-item-latest-content1">2.14 GB</div>
-                            <div class="flex-item-latest-content2">Work from Home 1-Day Data Pack</div>
-                            <div class="flex-item-latest-content3">
-                                <figure>
-                                    <img src="img/card--triangles-s.svg" alt="card--triangles-s">
-                                    <div class="text-inside-img">Rs. 31</div>
-                                </figure>
-                            </div>
-                            <div class="flex-item-latest-content4">(Including taxes)</div>
-                            <div class="flex-item-latest-content5">Validity: 24.00 Hours</div>
-                            <div class="flex-item-latest-content6">
-                                <button type="submit" class="latest-content-buy-now">Buy Now</button>
-                            </div>
-                            <div class="flex-item-latest-content7">
-                                <button type="submit" class="latest-content-info">More Info</button>
+                            <div class="latest-tag-part">
+                                <img src="img/ex.png" alt="exclusive">
                             </div>
                         </div>
-                        <div class="flex-latest-right">
-                            <div class="flex-item-latest-content1">2.14 GB</div>
-                            <div class="flex-item-latest-content2">Work from Home 1-Day Data Pack</div>
-                            <div class="flex-item-latest-content3">
-                                <figure>
-                                    <img src="img/card--triangles-s.svg" alt="card--triangles-s">
-                                    <div class="text-inside-img">Rs. 31</div>
-                                </figure>
+
+                        <div class="latest-mid-wrap">
+                            <div class="flex-latest-mid">
+                                <div class="flex-item-latest-top">
+                                    <h3>2.14 GB</h3>
+                                    <p>Work from Home 1-Day Data Pack</p>
+                                </div>
+                                <div class="flex-item-latest-middle">
+                                    <figure>
+                                        <img src="img/card--triangles-s.svg" alt="card--triangles-s">
+                                    </figure>
+                                    <div class="text-inside-img">
+                                        <p class="smaller-text">Rs.</p>
+                                        <p class="bigger-text">31</p>
+                                    </div>
+                                    <p class="mid-lower">(Including taxes)</p>
+                                </div>
+                                <div class="flex-item-latest-bottom">
+                                    <p>
+                                        "Validity:"
+                                        "24.00 Hours"
+                                    </p>
+                                    <div class="btn-lower-part">
+                                        <a href="#buy" class="btn-primary">Buy Now</a>
+                                        <a href="#info" class="btn-secondary">More Info</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex-item-latest-content4">(Including taxes)</div>
-                            <div class="flex-item-latest-content5">Validity: 24.00 Hours</div>
-                            <div class="flex-item-latest-content6">
-                                <button type="submit" class="latest-content-buy-now">Buy Now</button>
-                            </div>
-                            <div class="flex-item-latest-content7">
-                                <button type="submit" class="latest-content-info">More Info</button>
+                            <div class="latest-tag-part">
+                                <img src="img/ex.png" alt="exclusive">
                             </div>
                         </div>
-                    </div>
+
+                        <div class="latest-right-wrap">
+                            <div class="flex-latest-right">
+                                <div class="flex-item-latest-top">
+                                    <h3>2.14 GB</h3>
+                                    <p>Work from Home 1-Day Data Pack</p>
+                                </div>
+                                <div class="flex-item-latest-middle">
+                                    <figure>
+                                        <img src="img/card--triangles-s.svg" alt="card--triangles-s">
+                                    </figure>
+                                    <div class="text-inside-img">
+                                        <p class="smaller-text">Rs.</p>
+                                        <p class="bigger-text">31</p>
+                                    </div>
+                                    <p class="mid-lower">(Including taxes)</p>
+                                </div>
+                                <div class="flex-item-latest-bottom">
+                                    <p>
+                                        "Validity:"
+                                        "24.00 Hours"
+                                    </p>
+                                    <div class="btn-lower-part">
+                                        <a href="#buy" class="btn-primary">Buy Now</a>
+                                        <a href="#info" class="btn-secondary">More Info</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-tag-part">
+                                <img src="img/ex.png" alt="exclusive">
+                            </div>
+                        </div>
+                    </div>    
                     <div class="flex-container-latest-bottom">
                         <button type="submit" class="latest-bottom-content">View All Offers</button>
                     </div>
