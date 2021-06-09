@@ -1,9 +1,15 @@
-*{
+*,html,body{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 a{
     color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:none !important;
 }
 img{
 	object-fit: contain;
@@ -16,7 +22,7 @@ header{
     height: 100%;
     width: 100%;
 }
-.flex-container-top-header,.flex-container-main-header,.flex-item-main-header-middle,.main-header-content,.flex-item-main-header-right,.top-header-content,.flex-item-main-header-right,.flex-container-find-content,.flex-container-latest,.flex-container-sim-left,.manage-acc,.flex-container-manage-acc-right,.get-app,.footer-top,.flex-container-footer-top-right,.footer-mid,.footer-bottom{
+.flex-container-top-header,.flex-container-main-header,.flex-item-main-header-middle,.main-header-content,.flex-item-main-header-right,.top-header-content,.flex-item-main-header-right,.flex-container-find-content,.flex-container-latest,.manage-acc,.flex-container-manage-acc-right,.get-app,.footer-top,.flex-container-footer-top-right,.footer-mid,.footer-bottom,.sim,.upgrade{
     display: flex;
     flex-direction: row;
     
@@ -175,11 +181,8 @@ header{
 }
 @keyframes slider-img {
     0% { opacity: 0; left: 450px; }
-    20% { opacity: 0; left: 450px;}
     25% { opacity: 0; left: 450px;}
-    45% { opacity: 0; left: 450px;}
     50% { opacity: 0; left: 450px;}
-    70% { opacity: 0; left: 450px;}
     75% { opacity: 0; left: 450px;}
     95% { opacity: 0; left: 450px;}
     100% { opacity: 0; left: 450px;}
@@ -194,16 +197,73 @@ header{
 
 /************** Recharge ***************/
 .recharge{
-   justify-content: space-around;
-   width: 100%;
-   padding: 20px 10px;
+    background-image: linear-gradient(90deg, rgb(34, 30, 103) 0%, rgb(94, 31, 112) 24.95%, rgb(122, 41, 118) 48.4%, rgb(163, 56, 125) 82.83%, rgb(182, 63, 129) 100%);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 2px rgb(0 0 0 / 4%);
+    width: 100%;
 }
+
 .flex-container-recharge{
-    padding: 0px 200px;
+    box-sizing: border-box;
 }
 .flex-item-recharge{
+    padding: 0px 15px;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: row;
+}
+.flex-item-recharge h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #6a2c91;
+    background: linear-gradient(90deg, #f04e23 0%, #f04e23 10%, #f26322 30.55%, #f6871f 76.87%, #f7941d 99.95%, #f7941d 100%);;
+}
+.phone-prepend,.amount-prepend{
+    line-height: 12px;
+    color: #212529;
+    text-align: left;
+    margin-right: -1px;
+
+    background-color: white;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 34px;
+    width: 55px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    
+    border: 1px solid #ced4da;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.phone-prepend-span,.amount-prepend-span{
+    
+
+    align-items: center;
+    padding: 20px 9px;
+    margin-bottom: 0;
+}
+.recharge-phone, .recharge-amount{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: row;
+}
+input.form-control{
+    border-radius: 100px;
+}
+.btn-recharge{
+    background-image: linear-gradient(90deg, rgb(240, 78, 35) 0%, rgb(240, 78, 35) 10%, rgb(242, 99, 34) 30.55%, rgb(246, 135, 31) 76.87%, rgb(247, 148, 29) 99.95%, rgb(247, 148, 29) 100%);
 }
 /******************* Find **************/
 .find-and-latest{
@@ -212,19 +272,20 @@ header{
     background-position-y: initial;
     background-color: initial;
     padding: 0px 200px;
-    width: 1136px;
-    height: 1311.13px;
 }
-.find-and-latest,.find{
+.find-and-latest,.find.flex-item-find-card{
     display: flex;
     flex-direction: column;
+    padding: 60px 0px;
 }
 .find{
-    width: 1136px;
-    height: 286px;
+    padding: 2;
+}
+.flex-container-find-text{
+    padding: 50px;
 }
 .flex-item-text{
-    font-family: sans-serif !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 30px;
@@ -232,16 +293,187 @@ header{
     color: #1f1b5c;
 }
 .flex-container-find-content{
-    margin: initial;
+    margin: 0px 20px;
+    padding: 0px 30px;
+}
+.flex-item-find-card{
+    justify-content: space-around;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    min-height: 80px;
+    flex-basis: 16.6667%;
+    transform: translateY(0px);
+    transition: all .4s ease-in-out;
+}
+.flex-item-img{
+    vertical-align: middle;
+    padding-left: 20px;
+    align-items: center;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.card-name{
+    position: relative;
+    font-family: Quicksand;
+    color: #63727a;
+    font-size: 18px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 5px 10px;
 }
 
 /************************* Latest **************/
 .latest{
+    padding: 60px 15px;
     justify-content: center;
 }
+.latest-text{
+    color: #212529;
+    margin-bottom: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+}
+.flex-container-latest{
+    margin-top: 40px;
+    width: 813px;
+}
+.flex-latest-left,.flex-latest-right,.flex-latest-mid{
+    width: 271px;
+    padding: 10px 10px;
+    
+    border: 2px solid #4d4d79;
+    box-sizing: border-box;
+    border-radius: 30px;
+    max-height: 580px;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.flex-latest-left,.flex-latest-right{
+    background-color: #692c91;
+}
+.flex-latest-mid{
+    background-color: #ee3e80;
+}
 
+.flex-item-latest-top h3{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    margin-bottom: 12px;
+}
+.flex-item-latest-top p{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+    min-height: 50px;
+}
+.flex-item-latest-middle{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.flex-item-latest-middle img{
+    vertical-align: middle;
+}
+.mid-lower{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.text-inside-img{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-65%, -50%);
+    display: flex;
+}
+.text-inside-img p{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: linear-gradient(90deg, rgb(34, 30, 103) 0%, rgb(94, 31, 112) 24.95%, rgb(122, 41, 118) 48.4%, rgb(163, 56, 125) 82.83%, rgb(182, 63, 129) 100%);;
+}
+.flex-item-latest-bottom p{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: linear-gradient(90deg, #e2e3e4 0%, #ffffff 100%);
+}
+
+.btn-primary{
+    color: #692c91;
+    background-color: white;
+    border-radius: 100px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.btn-secondary{
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+    box-sizing: border-box;
+    box-shadow: 0px 0px 14px rgb(0 0 0 / 14%);
+    border-radius: 30px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 0.7rem;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.latest-tag-part{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
 /************************** 4G SIM ************/
 .sim{
-    justify-content: space-around;
+    justify-content: flex-end;
+    background-image: linear-gradient(0deg, rgb(226, 227, 228) 0%, rgb(255, 255, 255) 93.68%);
 }
 /************************* Upgrade ****************/
