@@ -136,26 +136,26 @@ header{
     left: 0px;
 }
 #slide.animate .slider img:nth-child(1){
-    animation: home-slider 3s ease-in-out infinite 0s;
+    animation: home-slider 3s ease-in-out infinite 1s;
 }
 #slide.animate .slider img:nth-child(2){
-    animation: home-slider 3s ease-in-out infinite 1s ;
+    animation: home-slider 3s ease-in-out infinite 2s ;
 }
 #slide.animate .slider img:nth-child(3){
-    animation: home-slider 3s ease-in-out infinite 1s;
+    animation: home-slider 3s ease-in-out infinite 3s;
 }
 #slide.animate .slider img:nth-child(4){
-    animation: home-slider 3s ease-in-out infinite 1s;
+    animation: home-slider 3s ease-in-out infinite 4s;
 }
 #slide.animate .slider img:nth-child(5){
-    animation: home-slider 3s ease-in-out infinite s;
+    animation: home-slider 3s ease-in-out infinite 5s;
 }
 @keyframes home-slider {
-    0% { transform: translateX(1366px); }
-    25% { transform: translateX(1366px);}
-    50% { transform: translateX(1366px);}
-    75% { transform: translateX(1366px);}
-    100% { transform: translateX(1366px);}
+    0% { transform: translateX(-1366px); }
+    25% { transform: translateX(-1366px);}
+    50% { transform: translateX(-1366px);}
+    75% { transform: translateX(-1366px);}
+    100% { transform: translateX(-1366px);}
 }
 /************** Recharge ***************/
 .recharge{
@@ -402,6 +402,11 @@ input.form-control{
     margin-bottom: 30px;
     color: linear-gradient(90deg, #e2e3e4 0%, #ffffff 100%);
 }
+.btn-lower-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .btn-primary{
     color: #692c91;
@@ -446,6 +451,20 @@ input.form-control{
     top: 14px;
     left: 194px;
 }
+.flex-container-latest-bottom{
+    padding: 50px 330px;
+}
+.flex-container-latest-bottom a{
+    color: white;
+}
+.latest-bottom-content{
+    padding: 16px 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 100px;
+    background-image: linear-gradient(90deg, #221e67 0%, #5e1f70 24.95%, #7a2976 48.4%, #a3387d 82.83%, #b63f81 100%);
+}
 /************************** 4G SIM ************/
 .sim{
     justify-content: space-between;
@@ -458,7 +477,8 @@ input.form-control{
     padding: 10px;
 }
 .sim-content3{
-    padding: 16px 60px;
+    padding: 16px 30px;
+    max-width: 150px;
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -478,6 +498,15 @@ input.form-control{
     position: absolute;
     top: 181px;
     left: 853px;
+}
+.flex-upgrade-content a{
+    padding: 16px 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 100px;
+    background-image: linear-gradient(90deg, rgb(240, 78, 35) 0%, rgb(240, 78, 35) 10%, rgb(242, 99, 34) 30.55%, rgb(246, 135, 31) 76.87%, rgb(247, 148, 29) 99.95%, rgb(247, 148, 29) 100%);
+
 }
 
 /********************** Manage Account *******************/
@@ -513,6 +542,50 @@ input.form-control{
 
 /**************** Ncell App Download *************/
 
+.get-app{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
 
+    min-height: 440px;
+    background-image: linear-gradient(90deg, rgb(34, 30, 103) 0%, rgb(94, 31, 112) 24.95%, rgb(122, 41, 118) 48.4%, rgb(163, 56, 125) 82.83%, rgb(182, 63, 129) 100%);
+}
+.flex-container-get-app-left{
+    max-width: 50%;
+    padding: 40px 50px;
+    margin-right: 10px;
+}
+.get-app-left-content1{
+    font-size: 30px;
+    line-height: 38px;
+}
+.get-app-left-content1, .get-app-left-content2, .get-app-left-content3 h4, .android-button a, .ios-button a{
+    color: white;
+}
+.get-app-left-content2{
+    font-size: 18px;
+    line-height: 30px;
+}
+.get-app-left-content3 h4{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
 
+.flex-container-get-app-right{
+    padding-left: 10px;
+    position: absolute;
+    top: -94px;
+    left: 584px;
+}
+.android-button, .ios-button{
+    padding: 16px 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-color: white;
+    border-radius: 100px;
+    background-color: transparent;
+}
 /********************** Footer ***************/
