@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ncell</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://kit.fontawesome.com/b717b6ac83.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b717b6ac83.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -17,99 +15,90 @@
 <body>
    <div class="body-wrapper">
        <!------------------------- Nav Bar -------------------->
-       <div class="nav-wrap">
-           <header class="header">
-               <!------------------- Top Header --------------->
-               <div class="top-header">
-                   <div class="flex-container-top-header">
-                    <div class="top-header-content">
-                        <div class="flex-item-top-header-content-individual"><a href="#individual">Individual</a></div>
-                        <div class="flex-item-top-header-content"><a href="#business">Business</a></div>
-                        <div class="flex-item-top-header-content"><a href="#about">About Us</a></div>
-                    </div>
-                   </div>
-               </div>
-               <!----------------- Main Header ------------------>
-               <div class="main-header">
-                   <div class="flex-container-main-header">
-                       <div class="flex-item-main-header-left"><a href="#logo" class="logo"><img src="img/site_logo_white.svg" alt="Ncell logo"></a></div>
-                       <div class="flex-item-main-header-middle">
-                           <div class="flex-item-main-header-content">
-                            <a href="#content1" class="main-header-content">Get Started</a>
-                           </div>
-                           <div class="flex-item-main-header-content">
-                            <a href="#content2" class="main-header-content">Data & Voice</a>
-                           </div>
-                           <div class="flex-item-main-header-content">
-                            <a href="#content3" class="main-header-content">Latest Offers</a>
-                           </div>
-                           <!------------------- Explore ------------------>
-                           <div class="flex-item-main-header-content" id="explore">
-                                <a href="#content4" class="main-header-content" role="button">Explore
-                                    <span class="dropdown">
-                                        <svg class="main-header-dropdown">
-                                            <path class="path-drop" d="M13.832 6.91998L10 10.752L6.168 6.91998L5 8.07998L10 13.08L15 8.07998L13.832 6.91998Z" viewbox="0 0 20 20"></path>
-                                        </svg>
-                                    </span>
+        <header class="header">
+            <!------------------- Top Header --------------->
+            <div class="top-header">
+                <div class="top-header-content">
+                    <div class="flex-item-top-header-content-individual"><a href="#individual">Individual</a></div>
+                    <div class="flex-item-top-header-content"><a href="#business">Business</a></div>
+                    <div class="flex-item-top-header-content"><a href="#about">About Us</a></div>
+                </div>
+            </div>
+            <!----------------- Main Header ------------------>
+            <div class="main-header">
+                <div class="flex-container-main-header">
+                    <div class="flex-item-main-header-left"><a href="#logo" class="logo"><img src="img/site_logo_white.svg" alt="Ncell logo"></a></div>
+                    <div class="flex-item-main-header-middle">
+                        <div class="flex-item-main-header-content">
+                        <a href="#content1" class="main-header-content"><h5>Get Started</h5></a>
+                        </div>
+                        <div class="flex-item-main-header-content">
+                        <a href="#content2" class="main-header-content"><h5>Data & Voice</h5></a>
+                        </div>
+                        <div class="flex-item-main-header-content">
+                        <a href="#content3" class="main-header-content"><h5>Latest Offers</h5></a>
+                        </div>
+                        <!------------------- Explore ------------------>
+                        <div class="flex-item-main-header-content-explore" >
+                            <div id="explore">
+                                <a href="#content4" class="main-header-content" role="button">
+                                    <h5>Explore</h5><i class="fas fa-caret-down"></i>
                                 </a>
-                                <div class="dropbox">
-                                    <div class="drop-down-menu">
-                                        <div class="drop-menu-column">
-                                            <div class="drop-menu-column-options">1</div>
-                                            <div class="drop-menu-column-options">2</div>
-                                            <div class="drop-menu-column-options">3</div>
-                                            <div class="drop-menu-column-options">4</div>
-                                        </div>
-                                        <div class="drop-menu-column">
-                                            <div class="drop-menu-column-options">5</div>
-                                            <div class="drop-menu-column-options">a</div>
-                                            <div class="drop-menu-column-options">b</div>
-                                        </div>
-                                        <div class="drop-menu-column">
-                                            <div class="drop-menu-column-options">6</div>
-                                            <div class="drop-menu-column-options">a</div>
-                                            <div class="drop-menu-column-options">b</div>
-                                            <div class="drop-menu-column-options">c</div>
-                                            <div class="drop-menu-column-options">d</div>
-                                            <div class="drop-menu-column-options">e</div>
-                                            <div class="drop-menu-column-options"></div>
-                                            <div class="drop-menu-column-options"></div>
-                                            <div class="drop-menu-column-options"></div>
-                                        </div>
-                                        <div class="drop-menu-column">
-                                            <div class="drop-menu-column-options">7</div>
-                                            <div class="drop-menu-column-options">a</div>
-                                            <div class="drop-menu-column-options">b</div>
-                                            <div class="drop-menu-column-options">c</div>
-                                            <div class="drop-menu-column-options">d</div>
-                                            <div class="drop-menu-column-options"></div>
-                                            <div class="drop-menu-column-options"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="flex-item-main-header-content">
-                            <a href="#content5" class="main-header-content">Recharge</a>
-                           </div>
-                       </div>
-                       <div class="flex-item-main-header-right">
-                           <div class="flex-item-main-header-right-icon"><a class="search-icon"><i class="fas fa-search"></i></a></div>
-                           <div class="flex-item-main-header-right-icon"><a class="profile-icon"><i class="far fa-user"></i></a></div>
-                       </div>
-                   </div>
-               </div>
-           </header>
-       </div>
+                            </div>
+                        </div>
+                        <div class="flex-item-main-header-content">
+                        <a href="#content5" class="main-header-content"><h5>Recharge</h5></a>
+                        </div>
+                    </div>
+                    <div class="flex-item-main-header-right">
+                        <div class="flex-item-main-header-right-icon"><a class="search-icon"><i class="fas fa-search"></i></a></div>
+                        <div class="flex-item-main-header-right-icon"><a class="profile-icon"><i class="far fa-user"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropbox">
+                <div class="drop-menu-column">
+                    <div class="drop-menu-column-options">1</div>
+                    <div class="drop-menu-column-options">2</div>
+                    <div class="drop-menu-column-options">3</div>
+                    <div class="drop-menu-column-options">4</div>
+                </div>
+                <div class="drop-menu-column">
+                    <div class="drop-menu-column-options">5</div>
+                    <div class="drop-menu-column-options">a</div>
+                    <div class="drop-menu-column-options">b</div>
+                </div>
+                <div class="drop-menu-column">
+                    <div class="drop-menu-column-options">6</div>
+                    <div class="drop-menu-column-options">a</div>
+                    <div class="drop-menu-column-options">b</div>
+                    <div class="drop-menu-column-options">c</div>
+                    <div class="drop-menu-column-options">d</div>
+                    <div class="drop-menu-column-options">e</div>
+                    <div class="drop-menu-column-options"></div>
+                    <div class="drop-menu-column-options"></div>
+                    <div class="drop-menu-column-options"></div>
+                </div>
+                <div class="drop-menu-column">
+                    <div class="drop-menu-column-options">7</div>
+                    <div class="drop-menu-column-options">a</div>
+                    <div class="drop-menu-column-options">b</div>
+                    <div class="drop-menu-column-options">c</div>
+                    <div class="drop-menu-column-options">d</div>
+                    <div class="drop-menu-column-options"></div>
+                    <div class="drop-menu-column-options"></div>
+                </div>
+            </div>
+        </header>
+       
        <!---------------------- Main Section -------------------->
        <main>
            <div class="slider" id="slide">
-                <a href="#slideshow1" class="slider-img">
-                    <img src="img/web0mfr0.jpg" alt="offers_recharge-offer">
-                    <img src="img/1366x430 triple pwa51h71.jpg" alt="triple">
-                    <img src="img/cfwjx4.jpg" alt="img">
-                    <img src="img/scvj6hh.jpg" alt="img">
-                    <img src="img/web0mfr0.jpg" alt="web">
-                </a>
+                <img src="img/web0mfr0.jpg" alt="offers_recharge-offer">
+                <!-- <img src="img/1366x430 triple pwa51h71.jpg" alt="triple">
+                <img src="img/cfwjx4.jpg" alt="img">
+                <img src="img/scvj6hh.jpg" alt="img">
+                <img src="img/web0mfr0.jpg" alt="web"> -->
            </div>
            <!-- <div class="slider-arrow">
                <button class="previous-button">
@@ -125,10 +114,10 @@
                     </svg>
                 </button>
             </div> -->
-            <!-------------------------- Recharge ----------------------->
+            <!------------------------- Recharge ----------------------->
             <div class="recharge">
                 <form class="flex-container-recharge-section">
-                    <div class="flex-item-recharge-left"><h3>Recharge and Pay Postpaid Bills</h3></div>
+                    <div class="flex-item-recharge-left"><h3>Recharge and Pay <br> Postpaid Bills</h3></div>
                     <div class="flex-item-recharge-right">
                         <div class="recharge-phone">
                             <div class="phone-prepend"><span class="phone-prepend-span">+977</span></div>
@@ -148,7 +137,7 @@
                 <!------------------- Find -------------------------->
                 <div class="find">
                     <div class="flex-container-find-text">
-                        <div class="flex-item-text">Find What You Need Right Away</div>
+                        <div class="flex-item-text">Find What You Need Right Away!</div>
                     </div>
                     <div class="flex-container-find-content">
                         <a href="#find1" class="flex-item-find-card">
@@ -319,7 +308,7 @@
                         <p>Your Account</p>
                     </div>
                     <div class="flex-item-manage-acc-login">
-                        <a href="#">Login</a>
+                        <button class="acc-login" type="submit">Log in</button>
                     </div>
                </div>
                <div class="flex-container-manage-acc-right">
