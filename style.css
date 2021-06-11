@@ -28,7 +28,7 @@ header{
 }
 .top-header{
     width: 100%;
-    background-color: whitesmoke;
+    background-image: linear-gradient(90deg, #e2e3e4 0%, #ffffff 100%);;
     padding: 10px;
     justify-content: center;
 }
@@ -135,12 +135,10 @@ header{
     width: 100%;
     display: flex;
     flex-direction: row;
-    
-    width: 100%;
     height: 433px;
     background: transparent;
     position: relative;
-    animation: home-slider 10s ease-in-out infinite 2s;
+    animation: home-slider 10s ease-in-out infinite 5s;
     
 }
 .slider-img{
@@ -174,11 +172,12 @@ header{
 @keyframes home-slider {
     0% { transform: translateX(0px);}
     25% { transform: translateX(-1366px);}
-    50% { transform: translateX(-2732px);}
-    75% { transform: translateX(-4098px);}
+    45% { transform: translateX(-2732px);}
+    60% { transform: translateX(-4098px);}
+    80% { transform: translateX(-5464px);}
     100% { transform: translateX(-5464px);}
 }
-/************** Recharge ***************/
+/****************** Recharge ************************/
 .recharge{
     background-image: linear-gradient(90deg, rgb(34, 30, 103) 0%, rgb(94, 31, 112) 24.95%, rgb(122, 41, 118) 48.4%, rgb(163, 56, 125) 82.83%, rgb(182, 63, 129) 100%);
     border: 1px solid rgba(0, 0, 0, 0.08);
@@ -190,6 +189,9 @@ form{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.flex-item-recharge-left{
+    max-width: 28%;
 }
 .flex-item-recharge-left h3{
     font-style: normal;
@@ -259,6 +261,10 @@ input.form-control{
     border-radius: 100px;
     background-image: linear-gradient(90deg, rgb(240, 78, 35) 0%, rgb(240, 78, 35) 10%, rgb(242, 99, 34) 30.55%, rgb(246, 135, 31) 76.87%, rgb(247, 148, 29) 99.95%, rgb(247, 148, 29) 100%);
 }
+.btn-recharge:hover{
+    transform: translateY(-2px);
+    transition: all .2s ease-in-out;
+}
 /******************* Find **************/
 .find-and-latest{
     background-image: linear-gradient(0deg, rgb(226, 227, 228) 0%, rgb(255, 255, 255) 93.68%);
@@ -271,7 +277,7 @@ input.form-control{
 .find{
     display: flex;
     flex-direction: column;
-    padding: 0px 10px;
+    padding: 20px 10px;
 }
 
 .flex-item-text{
@@ -290,7 +296,9 @@ input.form-control{
     justify-content: space-evenly;
     padding: 10px;
 }
-
+.latest-mobile{
+    display: none;
+}
 .flex-item-find-card{
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 30px;
@@ -327,7 +335,6 @@ input.form-control{
 .latest-text{
     color: #212529;
     margin-bottom: 2.5rem;
-    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
@@ -336,49 +343,40 @@ input.form-control{
 .flex-container-latest{
     justify-content: space-between;
     margin-top: 40px;
-
 }
+
 .latest-left-wrap, .latest-mid-wrap, .latest-right-wrap{
     position: relative;
+    align-items: center;
 }
 
 .flex-latest-left,.flex-latest-right,.flex-latest-mid{
     padding: 10px 10px;
     box-sizing: border-box;
     border-radius: 30px;
-    max-height: 580px;
-    margin-top: 15px;
-    padding-top: 15px;
 }
 .flex-latest-left,.flex-latest-right{
     background-color: #692c91;
     border: 2px solid #4d4d79;
 }
 .flex-latest-mid{
-    margin-top: 10px;
-    margin-bottom: 10px;
     background-color: #ee3e80;
     border: 2px solid #ee3e80;
 }
-
-.flex-item-latest-top h3{
-    font-family: Quicksand;
-    font-style: normal;
+.flex-item-latest-top h3, .flex-item-latest-top p{
     font-weight: bold;
+    color: white;
+}
+.flex-item-latest-top h3{
     font-size: 36px;
     line-height: 45px;
     text-align: center;
-    color: white;
     margin-bottom: 12px;
 }
 .flex-item-latest-top p{
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    color: white;
     margin-bottom: 0px;
     min-height: 50px;
 }
@@ -389,10 +387,10 @@ input.form-control{
 }
 .flex-item-latest-middle img{
     vertical-align: middle;
+    padding-left: 38px;
 }
+
 .mid-lower{
-    font-family: Quicksand;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -402,27 +400,23 @@ input.form-control{
     margin-bottom: 0px;
 }
 .smaller-text{
+    font-size: 16px;
     position: absolute;
     top: 73px;
-    left: 75px;
+    left: 110px;
 }
 .bigger-text{
+    font-size: 30px;
     position: absolute;
-    top: 91px;
-    left: 99px;
+    top: 79px;
+    left: 129px;
     
 }
 .text-inside-img p{
-    font-family: Quicksand;
-    font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
     color: linear-gradient(90deg, rgb(34, 30, 103) 0%, rgb(94, 31, 112) 24.95%, rgb(122, 41, 118) 48.4%, rgb(163, 56, 125) 82.83%, rgb(182, 63, 129) 100%);;
 }
 .flex-item-latest-bottom p{
-    font-family: Quicksand;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -461,8 +455,8 @@ input.form-control{
 }
 .latest-tag-part{
     position: absolute;
-    top: 14px;
-    left: 194px;
+    top: 0px;
+    left: 203px;
 }
 .flex-container-latest-bottom{
     padding: 50px 330px;
@@ -692,4 +686,238 @@ input.form-control{
     line-height: 26px;
     color: rgba(0, 0, 0, 0.87);
     padding: 8px;
+}
+
+/******************************** Responsive Layout **************************/
+@media screen and (max-width:1166px) {
+    /**********************Top Header ***************************/
+    header{
+        width: 100%;
+    }
+    .top-header-content{
+        align-items: center;
+        padding: 0px 80px 0px 150px;
+    }
+    .flex-item-top-header-content{
+        padding-left: 20px;
+    }
+
+    /**********************Main Header ***************************/
+    .main-header{
+        width: 100%;
+        padding: 0px;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        height: auto !important;
+    }
+    .flex-container-main-header {
+        padding: 5px 0px 0px 50px;
+    }
+    .flex-item-main-header-content{
+        padding: 2px 14px;    
+    }
+    .flex-item-main-header-right{
+        margin: 10px 11px;
+        padding-left: 88px;
+    }
+    .flex-item-main-header-middle h5{
+        font-size: 12px;
+    }
+    .fa-caret-down{
+        right: 72px;
+        top: 10px;
+        font-size: 10px;
+    }
+    .flex-item-main-header-middle{
+    margin-right: -33px;
+    }
+
+    /********************* Slider *****************/
+    .slider, .slider-img{
+        flex-wrap: nowrap;
+    }
+
+    /****************** Recharge ************************/
+    
+    form, .flex-item-recharge-right, .flex-container-find-content{
+        flex-wrap: wrap;
+    }
+    .flex-item-recharge-left, .btn-recharge {
+        max-width: 100%;
+    }
+
+
+    .latest{
+        display: none;
+    }
+
+    .latest-mobile{
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+        position: relative;
+    }
+    .latest-mobile-text{
+        color: #212529;
+        margin-bottom: 2.5rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+    }
+
+    .flex-container-latest-mobile{
+        margin-top: 40px;
+    }
+    .flex-item-latest-mobile-top h3, .flex-item-latest-mobile-top p{
+        font-weight: bold;
+        color: white;
+    }
+    .flex-item-latest-mobile-top h3{
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .flex-item-latest-mobile-top p{
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 0px;
+        min-height: 50px;
+    }
+
+    /* .flex-item-latest-mobile-middle{
+        
+        margin-top: 50px;
+        margin-bottom: 25px;
+
+    } */
+
+    .flex-item-latest-mobile-middle img{
+        vertical-align: middle;
+        padding-left: 63px;
+    }
+
+    .smaller-text-mobile{
+        font-size: 16px;
+        position: absolute;
+        top: 288px;
+        left: 162px;
+    }
+    .bigger-text-mobile{
+        font-size: 30px;
+        position: absolute;
+        top: 293px;
+        left: 185px;
+        
+    }
+    .text-inside-img-mobile p{
+        font-weight: bold;
+        color: linear-gradient(90deg, rgb(34, 30, 103) 0%, rgb(94, 31, 112) 24.95%, rgb(122, 41, 118) 48.4%, rgb(163, 56, 125) 82.83%, rgb(182, 63, 129) 100%);;
+    }
+
+    .mid-lower-mobile{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+
+    .flex-item-latest-mobile-bottom p{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        margin: 30px;
+        color: white;
+    }
+
+    .btn-lower-part-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+    .btn-primary-mobile, .btn-secondary-mobile{
+        padding: 8px 16px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 30px;
+    }
+    .btn-primary-mobile{
+        background-color: white;
+        color: #692c91;
+    }
+    .btn-secondary-mobile{
+        background: transparent;
+        color: white;
+        border: 1px solid #ffffff;
+        box-shadow: 0px 0px 14px rgb(0 0 0 / 14%);
+        
+    }
+    .latest-mobile-tag-part{
+        position: absolute;
+        top: 77px;
+        left: 255px;
+    }
+
+
+    .flex-container-latest-mobile-bottom{
+        padding: 50px 30px;
+    }
+    .flex-container-latest-mobile-bottom a{
+        color: white;
+    }
+    .latest-mobile-bottom-content{
+        padding: 16px 90px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 100px;
+        background-image: linear-gradient(90deg, #221e67 0%, #5e1f70 24.95%, #7a2976 48.4%, #a3387d 82.83%, #b63f81 100%);
+    }
+
+    .flex-latest-mobile-wrap{
+        padding: 10px 10px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        margin: 15px;
+        background-color: #692c91;
+        border: 2px solid #4d4d79;
+    }
+    .flex-container-latest-mobile{
+        width: 100%;
+        
+    }
+
+    /********************** 4G *****************/
+    .flex-item-sim-content1 h3, .flex-item-sim-content2 p{
+        font-size: medium;
+    }
+    
+    .flex-container-footer-top-right, .manage-acc, .flex-container-manage-acc-right{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .stores, .footer-mid, .footer-bottom, .upgrade, .get-app{
+        flex-wrap: wrap;
+    }
+    
 }
